@@ -28,9 +28,9 @@ The deployment was executed collaboratively by the **Network Operations Center (
 
 ### 🔹 Project Scope  
 - Design and deployment of **campus-wide wireless coverage** across multiple buildings and outdoor zones.  
-- Integration of **Edgecore Cloud-Managed Switches** and **MikroTik RouterOS** for routing, segmentation, and authentication.  
+- Integration of **Edgecore Switches**, **Ruijie POE switch**, **Ruijie AP** and **MikroTik RouterOS** for routing, segmentation,        Interanal network connection and authentication.  
 - Configuration of **management, service, and guest VLANs** for secure traffic isolation.  
-- Implementation of **AAA authentication**, **SNMP monitoring**, and **Hotspot Management Portal** for end-user access control.  
+- Implementation of **AAA authentication**, **SNMP monitoring**, and **Ruijie Cloud Platform** for end-user access control.  
 
 ---
 
@@ -45,15 +45,9 @@ The deployment was executed collaboratively by the **Network Operations Center (
 - Applied **NAT policies** for internet access and internal route advertisements.  
 
 ### 🔸 Seamless Roaming & Wireless Optimization  
-- Configured **SSID broadcasting** and **Layer 2 roaming** across multiple APs.  
+- Configured **SSID broadcasting** and **roaming** across multiple APs.  
 - Calibrated transmit power and channel selection to reduce interference.  
-- Optimized roaming thresholds (RSSI-based) for uninterrupted user movement between APs.  
 - Implemented **dual-band Wi-Fi (2.4GHz/5GHz)** balancing to ensure performance efficiency.  
-
-### 🔸 Hotspot Management & Authentication  
-- Integrated **Hotspot Portal** for user authentication and accounting.  
-- Deployed **AAA server (TACACS+ and RADIUS)** for centralized access control.  
-- Configured **user session limits, bandwidth caps, and idle timeouts** to manage concurrent connections effectively.  
 
 ### 🔸 Cloud Management & Monitoring  
 - Registered all switches and APs under a **cloud controller** for real-time visibility and centralized configuration.  
@@ -61,18 +55,13 @@ The deployment was executed collaboratively by the **Network Operations Center (
 - Configured **TACACS+ authentication** for device access security.  
 - Linked **NTP servers** to synchronize logs and event timestamps across all nodes.  
 
-### 🔸 Redundancy & Resilience  
-- Implemented **link aggregation (LACP)** between distribution and core layers for redundancy.  
-- Established **failover routes** in MikroTik for WAN reliability.  
-- Monitored network latency, packet loss, and uplink performance during peak load testing.  
-
 ---
 
 ## 🧰 NOC Team Responsibilities  
 
 | Phase | Activities Performed |
 |-------|----------------------|
-| **Pre-Deployment** | Site survey, RF analysis, access point placement planning, and switch rack allocation. |
+| **Pre-Deployment** | Site survey, access point placement planning, and switch rack allocation. |
 | **Deployment** | Configured VLANs, routing, DHCP, and NAT; integrated switches and APs into cloud management; tested wireless coverage. |
 | **Post-Deployment Validation** | Verified SSID broadcast, roaming handover, authentication, and bandwidth throughput tests. |
 | **Monitoring Setup** | Deployed SNMP and syslog monitoring, created alert thresholds, and integrated network devices with the NOC dashboard. |
@@ -86,13 +75,12 @@ The deployment was executed collaboratively by the **Network Operations Center (
 | Category | Technology / Protocol |
 |-----------|----------------------|
 | Routing Platform | MikroTik RouterOS |
-| Switching Platform | Edgecore Cloud-Managed Switches |
+| Switching Platform | Edgecore and Ruijie POE Switches |
 | Wireless Platform | Cloud-Managed Access Points |
 | Connectivity | VLAN, Static Routing, DHCP, NAT |
 | Management | SNMP, Syslog, TACACS+, Cloud Controller |
-| Authentication | AAA Server (TACACS+/RADIUS), Hotspot Portal |
 | Monitoring | Cloud Dashboard, NOC SNMP Alerts |
-| Features | Seamless Roaming, QoS, Redundancy (LACP), Centralized Management |
+| Features | Seamless Roaming, Centralized Management |
 
 ---
 
@@ -117,7 +105,6 @@ The deployment was executed collaboratively by the **Network Operations Center (
 | VLAN Isolation | Confirmed service/management traffic separation | ✅ Pass |
 | Roaming Test | Tested seamless SSID handoff between APs | ✅ Pass |
 | DHCP/NAT Verification | Validated IP leasing and internet access | ✅ Pass |
-| Authentication Test | Verified AAA integration and user portal access | ✅ Pass |
 | Monitoring Test | SNMP and cloud controller alerts verified | ✅ Pass |
 
 ---
