@@ -1,6 +1,9 @@
 # 📶 Project: Campus Wi-Fi Deployment with Seamless Roaming
 
 ## 📸 Network Topology  
+<img width="1275" height="850" alt="image" src="https://github.com/user-attachments/assets/accb82e5-1fce-4729-8048-7ded7ed74e34" />
+
+
 
 ## 📘 Overview  
 This project involved a **real-world enterprise campus Wi-Fi deployment** to deliver a **high-performance, reliable, and centrally managed wireless infrastructure**.  
