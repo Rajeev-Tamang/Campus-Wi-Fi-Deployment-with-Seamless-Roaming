@@ -1,7 +1,7 @@
 # 📶 Project: Campus Wi-Fi Deployment with Seamless Roaming
 
 ## 📸 Network Topology  
-<img width="1275" height="850" alt="image" src="https://github.com/user-attachments/assets/accb82e5-1fce-4729-8048-7ded7ed74e34" />
+<img width="1275" height="850" alt="image" src="https://github.com/user-attachments/assets/741463f7-fc47-42c9-b44e-e2e30176fe99" />
 
 
 
